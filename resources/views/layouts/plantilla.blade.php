@@ -27,7 +27,7 @@
 			<div class="container">
 				<div class=container-fluid">
 					<div class="logo">
-						<a href="index.html" title="logo"><img src="images/logo.png" alt="" height="40"></a>
+						<a href="index.html" title="logo"><img src="images/logo.png" alt="" height="50"></a>
 					</div><!--logo end-->
 					<nav>
 						<ul>
@@ -44,7 +44,7 @@
 								</a>
 								<ul>
 									<li><a href="inst.educativas.html" title=""></a></li>
-									<li><a href="aprendiz.html" title="">APRENDIZ</a></li>
+									<li><a href="aprendiz.html" title="">REGISTRO APRENDIZ</a></li>
                                     <li><a href="inf.contacto.html" title="">INFORMACIÓN CONTACTO</a></li>
                                     <li><a href="asignar.cupos.html" title="">ASIGNAR CUPOS</a></li>
 								</ul>
@@ -83,7 +83,17 @@
 						     </div>
 						     <div class="user-account-settingss" id="users">
 					 </ul>
-					  <h3 class="tc"><a href="inicio.sesion.html" title="">CERRAR SESIÓN</a></h3>
+					  <h3 class="tc">
+						<a class="dropdown-item" href="{{ route('logout') }}"
+						onclick="event.preventDefault();
+									  document.getElementById('logout-form').submit();">
+						 {{ __('Cerrar Sesión') }}
+					 </a>
+
+					 <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+						 @csrf
+					 </form>
+					  </h3>
 						</div><!--user-account-settingss end-->
 					</div>
 

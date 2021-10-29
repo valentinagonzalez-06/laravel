@@ -61,7 +61,7 @@
                                 <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
                             </div>
                         </div>
-                        <img src="../img/logo.png" class="img-fluid" width="200" alt="...">
+                        <img src="images/logo.png" class="img-fluid" width="200" alt="...">
 
                         <div class="form-group text-right">
                             <div class="col-md-6 offset-md-4">

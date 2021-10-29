@@ -70,7 +70,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;
 }
 body {
-	line-height: 1;
+	line-height: 2;
 	font-family: 'Source Sans Pro', sans-serif;
 	overflow-x: hidden;
 	font-weight: 400;
@@ -139,8 +139,7 @@ hr {
 
 /* ================ CROSS BROWSER COMPATABILITY =============== */
 img{
-	max-width: 400%;
-
+	max-width: 300%;
 }
 .ask-question,
 nav,
@@ -272,7 +271,7 @@ nav ul li:hover > ul,
 header {
 	float: left;
 	width: 100%;
-	background-color: #186aad;
+	background-color: #1b3fb8;
 }
 .header-data {
 	float: left;
@@ -285,7 +284,7 @@ header {
 	margin-top: 10px;
 }
 .logo.pd-btm {
-	padding-bottom: 30px;
+	padding-bottom: 10px;
 }
 .forum-bar {
 	float: left;
@@ -386,7 +385,7 @@ header {
 	border: 0;
 }
 .search-bar form button i {
-	color: #e44d3a;
+	color: #0a0a0a;
 	font-size: 20px;
 	font-weight: bold;
 }
@@ -413,7 +412,7 @@ nav ul ul {
 	top: 100%;
 	left: 0;
 	width: 200px;
-	background-color: #186aad;
+	background-color: #e44d3a;
 	text-align: left;
 	padding: 20px 0 10px 0; 
 	opacity: 0;
@@ -517,7 +516,7 @@ nav ul ul li a {
 	text-transform: capitalize;
 	font-weight: 600;
 	text-align: center;
-	background-color: #186aad;
+	background-color: #e44d3a;
 	padding: 18px 0;
 }
 nav ul li span {
@@ -538,8 +537,8 @@ nav > ul > li > a:hover {
 .user-account {
 	float: right;
 	width: 110px;
-	border-left: 3px solid #070707;
-	border-right: 3px solid #070707;
+	border-left: 1px solid #1b3fb8;
+	border-right: 1px solid #1b3fb8;
 	box-sizing: border-box;
 	position: relative;
 }
@@ -697,7 +696,7 @@ nav > ul > li > a:hover {
 	position: absolute;
 	top: 51%;
 	right: 0px;
-	color: rgb(175, 173, 173);
+	color: #fff;
 	font-size: 12px;
 	-webkit-transform: translateY(-50%);
 	-moz-transform: translateY(-50%);

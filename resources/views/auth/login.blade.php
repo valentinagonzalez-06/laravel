@@ -51,7 +51,7 @@
                                 </div>
                             </div>
                         </div>
-                        <img src="../img/logo.png" class="img-fluid" width="200" alt="...">
+                        <img src="images/logo.png" class="img-fluid" width="200" alt="...">
 
 
                         <div class="form-group text-right">

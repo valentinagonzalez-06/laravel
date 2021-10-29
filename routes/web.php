@@ -1,5 +1,7 @@
 <?php
 
+use GuzzleHttp\Promise\Create;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,5 +21,9 @@ Route::get('/', function () {
 
 Auth::routes();
 
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//Route::get('/aprendizregistro','RegistroaprendizController@index');
+//Route::get('/aprendizregistro','RegistroaprendizController@Create');
 
+Route::resource('aprendizregistro','RegistroaprendizController');

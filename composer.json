@@ -22,8 +22,11 @@
         "phpunit/phpunit": "^9.5.8"
     },
     "autoload": {
+        "classmap": [
+            "App\"app/database/migrations"
+        ],
         "psr-4": {
-            "App\\": "app/",
+          
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         }
