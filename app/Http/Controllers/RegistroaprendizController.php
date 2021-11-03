@@ -15,7 +15,9 @@ class RegistroaprendizController extends Controller
     public function index()
     {
         //
-        return view('aprendizregistro.index');
+        $datos['aprendizregistro']=Registroaprendiz::paginate(5);
+        
+        return view('aprendizregistro.index',$datos);
     }
 
     /**
@@ -38,13 +40,19 @@ class RegistroaprendizController extends Controller
     public function store(Request $request)
     {
         //
-      // $datosaprendizregistro=request()->all();
+       //$datosregistro=request()->all();
 
        $datosaprendizregistro=request()->except('_token');
 
        
-       
-       registroaprendiz::insert($datosaprendizregistro);
+       Registroaprendiz::insert($datosaprendizregistro);
+
+       if($request->hasFile('foto')) {
+
+        $datosaprendizregistro['foto']=$request->file('foto')->store('uploads','public');
+
+
+       }
 
        return response()->json($datosaprendizregistro);
     }

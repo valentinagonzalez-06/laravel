@@ -4,6 +4,7 @@ use GuzzleHttp\Promise\Create;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -27,3 +28,4 @@ Route::get('home', [App\Http\Controllers\HomeController::class, 'index'])->name(
 //Route::get('/aprendizregistro','RegistroaprendizController@Create');
 
 Route::resource('aprendizregistro','RegistroaprendizController');
+
